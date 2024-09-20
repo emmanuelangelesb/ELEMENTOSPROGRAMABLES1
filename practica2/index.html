@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Práctica 2 </title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Elementos Programables I</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Práctica 2: 1_Arduino Basico Entradas Digitales</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/emmanuel.jpg" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">Emmanuel Angeles Barreto</div>
+                                <div class="text-muted">Ing. en Comunicaciones y Eletrónica</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: 01/09/2024</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >C++</a>
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/0.jpg" alt="..." /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
+                        <p class="fs-6 mb-4">Estas prácticas consisten en la construcción y simulación de circuitos electrónicos usando la plataforma Arduino, donde se utiliza la entrada digital (botones) para controlar LEDs bajo diversas condiciones.</p>
+                        <p class="fs-6 mb-4">Los ejemplos incluyen la implementación de condicionales simples como OR y AND, así como la creación de contadores utilizando LEDs.</p>
+                        
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
+                        <p class="fs-6 mb-4">El propósito de estas prácticas es familiarizarse con la lectura de entradas digitales en una placa Arduino y la programación condicional para controlar la activación de salidas (LEDs) en función del estado de los botones. </p>
+                        <p class="fs-6 mb-4">Se exploran conceptos básicos como la lógica digital, el uso de botones, y cómo manipular salidas mediante código.</p>
+                        
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
+                        <p class="fs-6 mb-4">- Arduino Uno</p>
+                        <p class="fs-6 mb-4">- Resistencias</p>
+                        <p class="fs-6 mb-4">- LEDs</p>
+                        <p class="fs-6 mb-4">- Botones</p>
+                        <p class="fs-6 mb-4">- Protoboard</p>
+                        <p class="fs-6 mb-4">- Cables</p>
+
+
+                        <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                        <p class="fs-6 mb-4">Entrada digital botón: Se configura un circuito con un solo botón que controla el encendido o apagado de un LED. Al presionar el botón, el LED cambia de estado.</p>
+                        <p class="fs-6 mb-4">Entrada digital 2 botones: Similar a la anterior, pero aquí se utilizan dos botones que controlan dos LEDs. Cada botón es responsable de un LED.</p>
+                        <p class="fs-6 mb-4">Condicionales con botones: Se implementa lógica condicional utilizando un solo botón para encender LEDs dependiendo de ciertas condiciones programadas.</p>
+                        <p class="fs-6 mb-4">Condicionales 2 botones: Similar a la anterior, pero con dos botones. Se utilizan estructuras condicionales para determinar qué LEDs se encienden.</p>
+                        <p class="fs-6 mb-4">Contador LEDs: Un contador simple utilizando LEDs. Al presionar un botón, se incrementa el conteo y los LEDs reflejan el estado del contador.</p>
+                        <p class="fs-6 mb-4">Condicionales OR botón: Aquí se simula una operación lógica OR entre botones. Si cualquiera de los botones es presionado, los LEDs se encienden.</p>
+                        <p class="fs-6 mb-4">Condicionales AND botones: Simulación de la operación lógica AND. Ambos botones deben estar presionados para que los LEDs se enciendan.</p>
+                 
+
+                            <p id="simulacion">
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Simulación -</h2>
+                            <p class="fs-6 mb-4">El software de simulación como Tinkercad o Proteus puede ser utilizado para validar el correcto funcionamiento de los circuitos antes de implementarlos físicamente. En la simulación, se verifican los estados lógicos de las entradas y la respuesta de las salidas (LEDs).</p>   
+                    
+                            <p id="diseño">
+                            <h1 class="fw-bolder mb-4 mt-5 fs-5">- Diseño -</h1>
+                            <p class="fs-6 mb-4">El diseño de los circuitos sigue una estructura básica: los botones están conectados a pines de entrada digital de Arduino y los LEDs a pines de salida digital. Se emplean resistencias pull-down o pull-up para asegurar lecturas estables en los botones.</p>
+                            
+                            <p id="construccion">
+                            <h1 class="fw-bolder mb-4 mt-5 fs-5">- Construcción -</h1>
+                            <p class="fs-6 mb-4">Los circuitos se construyen sobre un protoboard, siguiendo el esquema de conexión. Es importante respetar la polaridad de los LEDs y las conexiones de los botones para evitar cortocircuitos.</p>
+                            
+                        <p id="resultados">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                        <p class="fs-6 mb-4">Los resultados esperados incluyen la correcta operación de los LEDs en función de las entradas digitales (botones) y las condiciones programadas. Las simulaciones deben mostrar el encendido de los LEDs de acuerdo con las entradas establecidas (botones presionados o no).</p>
+                        <!---video1----->
+                        <figure class="mb-4" align="left"><video width="40%"  controls>
+                            <source src="video/practica1.1.mp4" type="video/mp4">
+                            <figure class="mb-4"><img class="img-fluid rounded" width="500px" src="img/0.jpg" alt="..." /></figure>
+                    </video></p></figure>
+                    <!---video2----->
+                    <figure class="mb-4" align="left"><video width="40%"  controls>
+                        <source src="video/practica1.2.mp4" type="video/mp4">
+                    </video></p></figure>
+                   <!---video3----->
+                    <figure class="mb-4" align="left"><video width="40%"  controls>
+                        <source src="video/practica1.3.mp4" type="video/mp4">
+                    </video></p></figure>
+                    <!---video4----->
+                    <figure class="mb-4" align="downleft"><video width="40%"  controls>
+                        <source src="video/practica1.4.mp4" type="video/mp4">
+                </video></p></figure>
+
+                        <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                        <p class="fs-6 mb-4">En conclusión, esta práctica permitió comprender el funcionamiento básico de las entradas digitales en Arduino, donde se trabajó con los estados HIGH y LOW para controlar dispositivos.</p>
+
+                        <p id="referencias">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
+                        <p class="fs-6 mb-4">https://www.tinkercad.com/classrooms/iyrIC6b0r9d/activities/dQHLVxOAeoA</p>
+                        
+                        <p id="descargables">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
+                        <p class="fs-6 mb-4">Descargar Arduino completo: <a href="https://www.tinkercad.com/classrooms/iyrIC6b0r9d/activities/kZmKeD4DH3a">...</a> </p>
+                        
+
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

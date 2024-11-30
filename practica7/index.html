@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Práctica 6</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Elementos Programables I</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+           
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Práctica 6: 3_Attiny85 Inputs (Attiny)</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/emmanuel.jpg" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">Emmanuel Angeles Barreto</div>
+                                <div class="text-muted">Ing. en Comunicaciones y Eletrónica</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: 01/09/2024</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >C++</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Attiny</a>
+
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/0.4.jpg" alt="..." /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
+                        <p class="fs-6 mb-4"> Se presentan ejemplos prácticos como el encendido y apagado de LEDs en respuesta a entradas de sensores digitales, el uso de señales analógicas para modificar comportamientos como retrasos en LEDs y la clasificación básica de sensores. Se busca fortalecer la comprensión de entradas digitales y analógicas, así como su programación.</p>
+                        
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
+                        <p class="fs-6 mb-4">Estas prácticas estan diseñadas para enseñar cómo interactuar con diversos sensores y componentes electrónicos, aprovechando las capacidades del ATtiny85, se exploran las diferencias entre señales digitales (ON/OFF) y analógicas (valores continuos),</p>
+                        
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
+                        <p class="fs-6 mb-4">- Arduino Uno</p>
+                        <p class="fs-6 mb-4">- Led´s </p>
+                        <p class="fs-6 mb-4">- Protoboard</p>
+                        <p class="fs-6 mb-4">- Botones</p>
+                        <p class="fs-6 mb-4">- Potenciometro</p>
+                        <p class="fs-6 mb-4">- Fuente de alimentación</p>
+                        
+                        <!-- Seccion de CONTENIDO que no se ostrara en la práctica
+                        <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                        <p class="fs-6 mb-4">Paso 1: Conectar el Potenciómetro:</p>
+                        <p class="fs-6 mb-4">- Conecta el pin de 5V de Arduino al terminal de voltaje del potenciómetro
+                        <p class="fs-6 mb-4">- Conecta el terminal de GND del Arduino al terminal de tierra del potenciómetro.</p>
+                        <p class="fs-6 mb-4">- Conecta el pin central del potenciómetro (cursor) a la entrada analógica A0 del Arduino.</p>
+                        <p class="fs-6 mb-4">Paso 2: Conectar el Servomotor:</p>
+                        <p class="fs-6 mb-4">- Conecta el cable de señal del servomotor (usualmente amarillo) al pin digital 9 del Arduino, que puede generar señales PWM.</p>
+                        <p class="fs-6 mb-4">- Conecta el cable rojo del servomotor a la salida de 5V del Arduino.</p>
+                        <p class="fs-6 mb-4">- Conecta el cable negro del servomotor al GND de Arduino.</p>
+                        <p class="fs-6 mb-4">Paso 3: Alimentación:</p>
+                        <p class="fs-6 mb-4">- Si el servomotor requiere mayor potencia, puedes usar una fuente de alimentación externa, conectando el positivo y negativo al servomotor y asegurándote de compartir tierra (GND) con el Arduino.</p>
+                  
+
+
+                            <p id="simulacion">
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Simulación -</h2>
+                            <p class="fs-6 mb-4">Se puede usar el software Tinkercad o Proteus para simular el circuito. Simular el código de Arduino que lee el valor analógico del potenciómetro y lo transforma en un ángulo para el servomotor.</p>   
+                    
+                            <p id="diseño">
+                            <h1 class="fw-bolder mb-4 mt-5 fs-5">- Diseño -</h1>
+                            <p class="fs-6 mb-4">El diseño del circuito es sencillo y se puede implementar en una protoboard:</p>
+                            <p class="fs-6 mb-4">El potenciómetro tiene tres pines: uno conectado a Vcc (5V), otro a GND y el pin del centro conectado a un pin analógico de Arduino (A0).</p>
+                            <p class="fs-6 mb-4">El servomotor tiene tres cables: el cable de señal (amarillo) conectado a un pin digital del Arduino con PWM (por ejemplo, el pin 9), el cable rojo conectado a 5V y el cable negro a GND.</p>
+                            <p class="fs-6 mb-4">Arduino puede alimentarse directamente por USB o mediante una fuente externa si es necesario.</p>
+                            
+                            <p id="construccion">
+                            <h1 class="fw-bolder mb-4 mt-5 fs-5">- Construcción: -</h1>
+                            <p class="fs-6 mb-4">Los circuitos se construyen sobre un protoboard, siguiendo el esquema de conexión. Es importante respetar la polaridad de los LEDs y las conexiones de los botones para evitar cortocircuitos.</p>
+                            
+                        <p id="resultados">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                        <p class="fs-6 mb-4">El servomotor debe moverse de acuerdo con la posición del potenciómetro. Al girar el potenciómetro, se debería observar que el ángulo del servomotor varía entre 0 y 180 grados. Este resultado demuestra cómo el valor analógico del potenciómetro se convierte en una señal PWM que controla la posición angular del servomotor.</p>
+                        -->
+
+
+                        <figure class="mb-4"><img class="img-fluid rounded" width="500px" src="img/1_Attiny85 Sensor Digital OnOff LED6.1.jpg" alt="..." /></figure><!---video1----->
+                        
+                        <figure class="mb-4" align="left"><video width="40%"  controls>
+                            <source src="video/practica6.1.mp4" type="video/mp4">
+                    </video></p></figure>
+                    <!---video2----->
+                    <figure class="mb-4"><img class="img-fluid rounded" width="500px" src="img/2_Attiny85 Sensor Analogico  OnOff LED6.2.jpg" alt="..." /></figure>
+                    <figure class="mb-4" align="left"><video width="40%"  controls>
+                        <source src="video/practica6.2.mp4" type="video/mp4">
+                    </video></p></figure>
+                   <!---video3----->
+                   <figure class="mb-4"><img class="img-fluid rounded" width="500px" src="img/3_Attiny85 Sensor Analogico - Delay LED6.3.jpg" alt="..." /></figure> 
+                   <figure class="mb-4" align="left"><video width="40%"  controls>
+                        <source src="video/practica6.3.mp4" type="video/mp4">
+                    </video></p></figure>
+                  <!---FIN DE LOS VIDEOS----->
+                        
+                  
+                  <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                        <p class="fs-6 mb-4">Se reforzó la comprensión de cómo las señales analógicas pueden modificar comportamientos del sistema, como el tiempo de encendido de un LED, lo que amplía las posibilidades de diseño en proyectos más avanzados</p>
+                        <p class="fs-6 mb-4">La clasificación de sensores permitió a los usuarios conocer una variedad de dispositivos útiles para distintas aplicaciones, fomentando la creatividad y el desarrollo de soluciones inteligentes.</p>
+                        
+                        <p id="referencias">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
+                        <p class="fs-6 mb-4">https://www.tinkercad.com/classrooms/iyrIC6b0r9d/activities/5RTQCTc5nLT</p>
+                        
+                        <p id="descargables">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
+                        <p class="fs-6 mb-4">Descargar Arduino completo: <a href="https://www.tinkercad.com/classrooms/iyrIC6b0r9d/activities/5RTQCTc5nLT">...</a> </p>
+
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
